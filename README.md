@@ -23,7 +23,7 @@ The basic idea is to use the [Travis CI](http://docs.travis-ci.com/user/getting-
 
 The workflow is as follows:
 
-* `git pull` to the Github repo triggers Travis CI
+* `git push` to the Github repo triggers Travis CI
 * Travis CI starts up a virtual machine and installs all required software (mostly Ruby gems)
 * We use a custom rake task to tell travis CI how to build the Jekyll site and push the updated content back to Github
 * Travis CI clones a different branch (either `gh-pages` or `master`, depending on the kind of Github repo) that holds the static HTML pages
